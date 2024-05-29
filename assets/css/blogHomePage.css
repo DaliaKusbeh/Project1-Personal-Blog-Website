@@ -1,0 +1,129 @@
+.my-card{
+    height: 77vh;
+    display: grid;
+    margin-top: 1em;
+    column-gap: 20px;
+    grid-template-areas: 
+    "card1 card1 card1" "card2 card3 card4"  ;
+    justify-content: center;
+
+}
+
+.my-card p{
+    color: #606c76;
+    line-height: 2em;
+    font-size: 18px;
+}
+.my-card h1, .my-card h2, .my-card h3, .my-card h4, .my-card h5, .my-cardh6 {
+    color:  #606c76;
+}
+
+.card1{
+    display: flex;
+    flex-direction: row;
+    /* border: solid  #606c76 ; */
+    height: 30vh;
+    border-radius: 1.5em;
+    padding: 20px;
+    grid-area: card1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.card1 img{
+    width: 230px;
+    height: auto;
+    margin-right: 4em;
+    border-radius: 50%;
+}
+
+.card2 , .card3, .card4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    text-align: center;
+    /* border: solid  #606c76 ; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    height: 30vh;
+    border-radius: 1.5em;
+    padding: 20px;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{ 
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+
+.card2 img, .card3 img, .card4 img{
+    width :30px;
+    margin-left: 5em;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+button{
+    margin-top: 2em;
+    border-radius: 20px;
+    border: none;
+    background-color: #9b4dca;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: #606c76;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+
+@media (max-width: 780px) {
+    .my-card {
+        grid-template-areas: 
+            "card1"
+            "card2" 
+            "card3" 
+            "card4";
+        height: auto;
+        row-gap: 15px;
+    }
+
+    .card1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .card2, .card3, .card4 {
+        height: auto;
+    }
+
+    .card1 img {
+        width: 200px;
+    }
+
+    .card2 img, .card3 img, .card4 img {
+        width: 25px;
+    }
+
+    button {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+}

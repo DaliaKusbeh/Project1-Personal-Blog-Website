@@ -1,0 +1,81 @@
+.contact-container {
+    margin-top: 1.5em;
+    margin-bottom: 3.5em;
+    margin-left: 6em;
+    display: grid;
+    grid-template-areas: "adress phone email";
+    text-align: center;
+    
+}
+
+.contact-p{
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5em;
+    color: #606c76;
+}
+
+.address ,.phone ,.email{
+    border: #606c76 solid;
+    border-radius: 50%;
+    padding: 40px;
+    width: 200px;
+}
+
+.contact1{
+    text-align: center;
+    color: #9b4dca;
+    font-size: 40px;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.phone p, .email p , .address p {
+    color: #606c76;
+}
+
+
+.address:hover ,.phone:hover ,.email:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.address{
+    grid : address;
+}
+
+.email{
+    grid: email ;
+}
+
+.phone{
+    grid : phone
+}
+
+@media (max-width: 780px) {
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-areas: 
+            "adress"
+            "phone"
+            "email";
+        gap: 40px;
+    }
+
+    .contact-p {
+        font-size: 20px;
+    }
+
+    .address, .phone, .email {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        margin-left: 0; 
+    }
+}

@@ -1,0 +1,25 @@
+.blog-post-container{
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.5em;
+}
+
+.blog-post-container dt {
+    color: #606c76;
+    font-size: 18px;
+}
+
+.blog-post-container ul{
+    font-weight:lighter;
+}
+
+blockquote{
+    color: #606c76;
+}
+
+.projects a{
+    font-size: 20px;
+    color:  #9b4dca;
+}
